@@ -28,7 +28,11 @@ offline. Contracts go in `src/`, tests in `test/`; leave the toolchain files as 
 ## Status
 
 - Prototype: complete, off-chain.
-- On-chain release: specified in `SPEC.md`, built by the IMD swarm (https://imd.fun) on Sepolia.
+- Contracts: PepeIce and JackpotHook implemented with offline Foundry tests. See
+  [contract and deployment documentation](docs/CONTRACTS.md), [security assumptions](docs/SECURITY.md),
+  [launch manifest](launch.json) and [ABI exports](docs/abi/).
+- Source publication, independent release review, attestation, admission, Sepolia deployment and
+  the live-contract frontend are subsequent IdentityMD service stages.
 
 ## License
 
