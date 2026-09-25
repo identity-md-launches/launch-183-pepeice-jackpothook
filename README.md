@@ -19,6 +19,12 @@ cd prototype && python3 -m http.server 8000
 
 Left and right arrows move and Up jumps. Space or `X` swings, pees (hold to aim, release to fire) or fires the climb jets. `T` flips the swap direction, `E` opens the golden throne (`1`-`3` buy, `Esc` closes), `C` cashes out of the climb, and `M` mutes the music.
 
+## Build the contracts
+
+The Foundry toolchain is fixed and vendored: `foundry.toml` (solc 0.8.26, cancun), `remappings.txt` and `lib/`
+(forge-std, OpenZeppelin, solmate, Uniswap v4-core) are ordinary files, so `forge build` and `forge test` work
+offline. Contracts go in `src/`, tests in `test/`; leave the toolchain files as they are.
+
 ## Status
 
 - Prototype: complete, off-chain.
@@ -26,4 +32,4 @@ Left and right arrows move and Up jumps. Space or `X` swings, pees (hold to aim,
 
 ## License
 
-MIT, see `LICENSE`.
+MIT, see `LICENSE`. Vendored libraries under `lib/` keep their own licenses.
